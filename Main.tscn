@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bolsakvi6j7y4"]
+[gd_scene load_steps=26 format=4 uid="uid://bolsakvi6j7y4"]
 
 [ext_resource type="Texture2D" uid="uid://c4gy5ck6q0oku" path="res://stone-wall.jpg" id="1_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://c21mi4u6ifd3b" path="res://stone-wall-dark-shadow.jpg" id="2_lgr22"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dcl8p8ig5xpqt" path="res://stone-wall-shadow.jpg" id="4_03owx"]
 [ext_resource type="PackedScene" uid="uid://cxad6fqpjr82t" path="res://Player.tscn" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://djmvr0hpadugg" path="res://Wine.tscn" id="6_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://c4c6p5yd27lba" path="res://Stick.tscn" id="7_lgr22"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lquwl"]
 
@@ -142,7 +143,6 @@ tile_map_data = PackedByteArray("AAAAAA0ACgAAAAAAAADx////CgAAAAAAAAAPAP//CgAAAAA
 tile_set = SubResource("TileSet_dg77c")
 rendering_quadrant_size = 32
 physics_quadrant_size = 32
-navigation_visibility_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.7, 0.7)
@@ -153,50 +153,59 @@ collision_mask = 6
 
 [node name="Collectibles" type="Node" parent="."]
 
-[node name="Wine" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-81, 16)
+[node name="Wine" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(16, 246)
 
-[node name="Wine2" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(115, 20)
+[node name="Wine2" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(16, 146)
 
-[node name="Wine3" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(14, 117)
+[node name="Wine3" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(-111, 239)
 
-[node name="Wine4" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-79, 115)
+[node name="Wine4" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(143, 239)
 
-[node name="Wine5" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(110, 117)
+[node name="Wine5" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(-81, -46)
 
-[node name="Wine6" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(16, 213)
+[node name="Wine6" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(111, -44)
 
-[node name="Wine7" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-113, 241)
+[node name="Wine7" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(-10, -245)
 
-[node name="Wine8" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(144, 242)
+[node name="Wine8" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(48, -242)
 
-[node name="Wine9" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-88, -275)
-
-[node name="Wine12" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(109, -272)
-
-[node name="Wine13" parent="." instance=ExtResource("6_3dxm6")]
+[node name="Wine9" parent="Collectibles" instance=ExtResource("6_3dxm6")]
 position = Vector2(108, -401)
 
-[node name="Wine14" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-334, -308)
+[node name="Wine10" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(-80, -401)
 
-[node name="Wine15" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-81, -401)
+[node name="Wine11" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(-207, -176)
 
-[node name="Wine16" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(366, -304)
+[node name="Wine12" parent="Collectibles" instance=ExtResource("6_3dxm6")]
+position = Vector2(240, -174)
 
-[node name="Wine10" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-271, 241)
+[node name="Stick" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(17, 176)
 
-[node name="Wine11" parent="." instance=ExtResource("6_3dxm6")]
-position = Vector2(-271, 241)
+[node name="Stick2" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(-50, 208)
+
+[node name="Stick3" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(-79, 209)
+
+[node name="Stick4" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(-80, 237)
+
+[node name="Stick5" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(76, 210)
+
+[node name="Stick6" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(112, 211)
+
+[node name="Stick7" parent="Collectibles" instance=ExtResource("7_lgr22")]
+position = Vector2(115, 240)
