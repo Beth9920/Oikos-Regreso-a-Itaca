@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://djmvr0hpadugg"]
+
+[ext_resource type="PackedScene" uid="uid://dpfptau1e8s37" path="res://Collectible.tscn" id="1_3joxp"]
+[ext_resource type="Texture2D" uid="uid://bqx6fyjpojucn" path="res://kylix.png" id="2_7kxek"]
+
+[node name="Wine" instance=ExtResource("1_3joxp")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_7kxek")
