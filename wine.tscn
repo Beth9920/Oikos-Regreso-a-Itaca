@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://djmvr0hpadugg"]
+
+[ext_resource type="PackedScene" uid="uid://dpfptau1e8s37" path="res://collectible.tscn" id="1_3joxp"]
+[ext_resource type="Texture2D" uid="uid://bqx6fyjpojucn" path="res://kylix.png" id="2_7kxek"]
+[ext_resource type="Script" uid="uid://d0337nq51q3py" path="res://wine.gd" id="2_x88t1"]
+
+[node name="Wine" instance=ExtResource("1_3joxp")]
+script = ExtResource("2_x88t1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_7kxek")

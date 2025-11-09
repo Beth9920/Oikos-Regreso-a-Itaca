@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm2j0f452foeh"]
+
+[ext_resource type="Script" uid="uid://chevls3sf4mev" path="res://sheep.gd" id="1_0sl4e"]
+[ext_resource type="PackedScene" uid="uid://dm6foy58qqwf5" path="res://non_collectible.tscn" id="1_xqjq8"]
+[ext_resource type="Texture2D" uid="uid://bpovc2gnmwrfw" path="res://original-sheep.png" id="3_qhocy"]
+[ext_resource type="AudioStream" uid="uid://dhbfo4r6lj77d" path="res://sheep-sound.mp3" id="4_y540r"]
+
+[node name="Sheep" instance=ExtResource("1_xqjq8")]
+script = ExtResource("1_0sl4e")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="1"]
+light_mask = 4
+texture = ExtResource("3_qhocy")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="2"]
+stream = ExtResource("4_y540r")

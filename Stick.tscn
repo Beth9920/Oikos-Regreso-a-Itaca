@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://c4c6p5yd27lba"]
 
-[ext_resource type="PackedScene" uid="uid://dpfptau1e8s37" path="res://Collectible.tscn" id="1_512e7"]
+[ext_resource type="PackedScene" uid="uid://dpfptau1e8s37" path="res://collectible.tscn" id="1_512e7"]
 [ext_resource type="Texture2D" uid="uid://bkg6dgbuok73t" path="res://stick.png" id="2_sujsi"]
-[ext_resource type="Script" uid="uid://clg72fl2umh48" path="res://Stick.gd" id="3_0ecb1"]
+[ext_resource type="Script" uid="uid://clg72fl2umh48" path="res://stick.gd" id="3_0ecb1"]
 
 [node name="Stick" instance=ExtResource("1_512e7")]
 script = ExtResource("3_0ecb1")
