@@ -5,8 +5,8 @@ class_name Player
 
 const SPEED = 200.0
 
-
 func _physics_process(delta: float) -> void:
+
 
 	var direction := Vector2.ZERO
 	
