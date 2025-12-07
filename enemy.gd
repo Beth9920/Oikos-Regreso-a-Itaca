@@ -8,11 +8,12 @@ class_name Enemy
 
 var waypoints: Array[Node2D] = []
 var current_wp: Node2D = null
+var sleeping: bool = false
 
 func _ready() -> void:
 	randomize()
 
-	# margen para que considere que ha llegado
+	# distancias a las que Poliphemus considera que ha llegado
 	agent.path_desired_distance = 4.0
 	agent.target_desired_distance = 4.0
 
@@ -31,6 +32,9 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if sleeping:
+		return
+	
 	if agent == null or waypoints.is_empty():
 		return
 

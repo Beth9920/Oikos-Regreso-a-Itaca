@@ -1,5 +1,6 @@
 extends Collectible
+class_name Wine
 
-#Defines what happens when player collects wine
 func _on_collect(player: Player) -> void:
-	get_tree().current_scene.add_wine()
+	var level := get_tree().current_scene.get_node("Level_1")
+	level.add_wine()

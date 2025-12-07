@@ -1,5 +1,6 @@
 extends Collectible
+class_name Stick
 
-#Defines what happens when player collects stick
 func _on_collect(player: Player) -> void:
-	get_tree().current_scene.add_stick()
+	var level := get_tree().current_scene.get_node("Level_1")
+	level.add_stick()
