@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://w18q6ojqd65j"]
+
+[ext_resource type="Script" uid="uid://7i2j8ks4b4mt" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://30aj35wiqesf" path="res://fondo_vacio2.png" id="2_mae5d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhbbi"]
+bg_color = Color(0.4862745, 0.1764706, 0.13725491, 0.84705883)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjkv5"]
+bg_color = Color(0.28561357, 0.15408006, 0.1185352, 0.90588236)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00ld1"]
+bg_color = Color(0.6117647, 0.1764706, 0.13725491, 0.8627451)
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_ouk20")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -22.0
+offset_top = -9.0
+offset_right = 1152.0
+offset_bottom = 704.0
+texture = ExtResource("2_mae5d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 363.0
+offset_top = 206.0
+offset_right = 808.0
+offset_bottom = 487.0
+alignment = 1
+
+[node name="NEW" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhbbi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gjkv5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_00ld1")
+text = "NUEVA PARTIDA
+"
+
+[node name="QUIT" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhbbi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gjkv5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_00ld1")
+text = "SALIR
+"
+
+[connection signal="pressed" from="VBoxContainer/NEW" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="VBoxContainer/QUIT" to="." method="_on_quit_pressed"]

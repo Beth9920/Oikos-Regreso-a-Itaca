@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bolsakvi6j7y4"]
+[gd_scene load_steps=33 format=4 uid="uid://51tt5mb8evv2"]
 
 [ext_resource type="Script" uid="uid://ptj2jlkjjhyp" path="res://level_1.gd" id="1_gyffv"]
 [ext_resource type="Texture2D" uid="uid://c4gy5ck6q0oku" path="res://stone-wall.jpg" id="2_1pe0h"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://djmvr0hpadugg" path="res://wine.tscn" id="7_65or1"]
 [ext_resource type="PackedScene" uid="uid://c4c6p5yd27lba" path="res://Stick.tscn" id="8_lhbbi"]
 [ext_resource type="PackedScene" uid="uid://dm2j0f452foeh" path="res://sheep.tscn" id="9_gyffv"]
-[ext_resource type="PackedScene" uid="uid://syujl5r7d0ak" path="res://ui.tscn" id="10_00ld1"]
 [ext_resource type="PackedScene" uid="uid://bowydg27u4pyp" path="res://poliphemus.tscn" id="10_1pe0h"]
 [ext_resource type="Script" uid="uid://bbe7qcdg350co" path="res://poliphemus.gd" id="11_27bay"]
 [ext_resource type="Texture2D" uid="uid://5e0vdvjg3d0r" path="res://imagen_2025-11-23_171115024 (1).png" id="12_ubhxj"]
@@ -145,1355 +144,1353 @@ sources/9 = SubResource("TileSetAtlasSource_7mycd")
 sources/10 = SubResource("TileSetAtlasSource_1bvp3")
 sources/11 = SubResource("TileSetAtlasSource_272bh")
 
-[node name="Main" type="Node2D"]
-
-[node name="Level_1" type="Node2D" parent="."]
+[node name="Level_1" type="Node2D"]
 script = ExtResource("1_gyffv")
 
-[node name="Cave" type="TileMapLayer" parent="Level_1"]
+[node name="Cave" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAA0ACgAAAAAAAADx////CgAAAAAAAAAPAP//CgAAAAAAAAACAPL/CgAAAAAAAAADAPL/CgAAAAAAAAAEAPL/CgAAAAAAAAAFAPL/CgAAAAAAAAAGAPL/CgAAAAAAAAAHAPL/CgAAAAAAAAAIAPL/CgAAAAAAAAAJAPL/CgAAAAAAAAAKAPL/CgAAAAAAAAALAPL/CgAAAAAAAAAMAPL/CgAAAAAAAAANAPL/CgAAAAAAAAAOAPL/CgAAAAAAAAAPAPL/CgAAAAAAAAAPAPP/CgAAAAAAAAAPAPT/CgAAAAAAAAAPAPX/CgAAAAAAAAAPAPb/CgAAAAAAAAAPAPf/CgAAAAAAAAAPAPj/CgAAAAAAAAAPAPn/CgAAAAAAAAAPAPr/CgAAAAAAAAAPAPv/CgAAAAAAAAAPAPz/CgAAAAAAAAAPAP3/CgAAAAAAAAAPAP7/CgAAAAAAAAAPAAAACgAAAAAAAAAPAAEACgAAAAAAAAAPAAIACgAAAAAAAAAPAAMACgAAAAAAAAAPAAQACgAAAAAAAAAPAAUACgAAAAAAAAAPAAYACgAAAAAAAAAPAAcACgAAAAAAAAAPAAgACgAAAAAAAAAPAAkACgAAAAAAAAAPAAoACgAAAAAAAAAPAAsACgAAAAAAAAAPAAwACgAAAAAAAAAPAA0ACgAAAAAAAAAOAA0ACgAAAAAAAAANAA0ACgAAAAAAAAAMAA0ACgAAAAAAAAALAA0ACgAAAAAAAAAKAA0ACgAAAAAAAAAJAA0ACgAAAAAAAAAIAA0ACgAAAAAAAAAHAA0ACgAAAAAAAAAGAA0ACgAAAAAAAAAFAA0ACgAAAAAAAAAEAA0ACgAAAAAAAAADAA0ACgAAAAAAAAACAA0ACgAAAAAAAAABAA0ACgAAAAAAAAD//w0ACgAAAAAAAAD+/w0ACgAAAAAAAAD9/w0ACgAAAAAAAAD8/w0ACgAAAAAAAAD7/w0ACgAAAAAAAAD6/w0ACgAAAAAAAAD5/w0ACgAAAAAAAAD4/w0ACgAAAAAAAAD3/w0ACgAAAAAAAAD2/w0ACgAAAAAAAAD1/w0ACgAAAAAAAAD0/w0ACgAAAAAAAADz/w0ACgAAAAAAAADy/w0ACgAAAAAAAADx/w0ACgAAAAAAAADx/wwACgAAAAAAAADx/wsACgAAAAAAAADx/woACgAAAAAAAADx/wkACgAAAAAAAADx/wgACgAAAAAAAADx/wcACgAAAAAAAADx/wYACgAAAAAAAADx/wUACgAAAAAAAADx/wQACgAAAAAAAADx/wMACgAAAAAAAADx/wIACgAAAAAAAADx/wEACgAAAAAAAADx/wAACgAAAAAAAADx//7/CgAAAAAAAADx//3/CgAAAAAAAADx//z/CgAAAAAAAADx//v/CgAAAAAAAADx//r/CgAAAAAAAADx//n/CgAAAAAAAADx//j/CgAAAAAAAADx//f/CgAAAAAAAADx//b/CgAAAAAAAADx//X/CgAAAAAAAADx//T/CgAAAAAAAADx//P/CgAAAAAAAADx//L/CgAAAAAAAADy//L/CgAAAAAAAADz//L/CgAAAAAAAAD0//L/CgAAAAAAAAD1//L/CgAAAAAAAAD2//L/CgAAAAAAAAD3//L/CgAAAAAAAAD4//L/CgAAAAAAAAD5//L/CgAAAAAAAAD6//L/CgAAAAAAAAD7//L/CgAAAAAAAAD8//L/CgAAAAAAAAD9//L/CgAAAAAAAAD+//L/CgAAAAAAAADy//P/CAAAAAAABgDy//T/CAAAAAAAAgDy//X/CAAAAAAAAgDy//b/CAAAAAAAAgDy//f/CAAAAAAAAgDy//j/CAAAAAAAAgDy//n/CAAAAAAAAgDy//r/CAAAAAAAAgDy//v/CAAAAAAAAgDy//z/CAAAAAAACADy//3/CAAAAAAAAgDy//7/CAAAAAAAAgDy////CAAAAAAAAgDy/wAACAAAAAAAAgDy/wEACAAAAAAAAgDy/wIACAAAAAAAAgDy/wMACAAAAAAAAgDy/wQACAAAAAAAAgDy/wUACAAAAAAACADy/wYACAAAAAAAAgDy/wcACAAAAAAAAgDy/wgACAAAAAAACADy/wkACAAAAAAACADy/woACAAAAAAACADy/wsACAAAAAAACADy/wwACAAAAAAABADz//P/CAAAAAAAAwDz//T/CgAAAAAAAADz//X/CgAAAAAAAADz//b/CgAAAAAAAADz//f/CgAAAAAAAADz//j/CgAAAAAAAADz//n/CgAAAAAAAADz//r/CgAAAAAAAADz//v/CQAAAAAAAADz//z/CAAAAAAAAwDz//3/CgAAAAAAAADz//7/CgAAAAAAAADz////CgAAAAAAAADz/wAACgAAAAAAAADz/wEACgAAAAAAAADz/wIACgAAAAAAAADz/wUACAAAAAAAAwDz/wYACgAAAAAAAADz/wcACQAAAAAAAADz/wgACAAAAAAABwDz/wkACAAAAAAACQDz/woACAAAAAAACQDz/wsACAAAAAAACQDz/wwACAAAAAAACwD0//T/CgAAAAAAAAD0//z/CAAAAAAAAwD0//3/CgAAAAAAAAD0/wQACAAAAAAAAgD0/wUACAAAAAAACwD0/wYACgAAAAAAAAD0/wcACgAAAAAAAAD0/wgACgAAAAAAAAD0/wkACgAAAAAAAAD0/woACgAAAAAAAAD0/wsACQAAAAAAAAD1//T/CgAAAAAAAAD1//z/CAAAAAAAAwD1//3/CgAAAAAAAAD1//7/CQAAAAAAAAD1////CAAAAAAAAwD1/wAACgAAAAAAAAD1/wEACgAAAAAAAAD1/wIACgAAAAAAAAD1/wMACgAAAAAAAAD1/wQACQAAAAAAAAD1/wUACAAAAAAACgD1/wYACAAAAAAACAD1/wcACAAAAAAACAD1/wgACAAAAAAACAD1/woACgAAAAAAAAD1/wsACQAAAAAAAAD2//P/CAAAAAAAAwD2//T/CgAAAAAAAAD2//j/CQAAAAAAAAD2//n/CAAAAAAAAwD2//r/CgAAAAAAAAD2//v/CQAAAAAAAAD2//z/CAAAAAAAAwD2//3/CgAAAAAAAAD2//7/CQAAAAAAAAD2////CAAAAAAACgD2/wAACAAAAAAACAD2/wEACAAAAAAAAgD2/wIACAAAAAAAAgD2/wMACAAAAAAACAD2/wQACAAAAAAAAgD2/wUACAAAAAAACQD2/wYACAAAAAAACQD2/wcACAAAAAAAAQD2/wgACAAAAAAACQD2/wkACAAAAAAACQD2/woACAAAAAAAAgD2/wsACAAAAAAAAgD2/wwACAAAAAAACwD3//P/CAAAAAAACgD3//T/CAAAAAAAAgD3//X/CAAAAAAAAgD3//b/CAAAAAAACAD3//f/CAAAAAAACAD3//z/CAAAAAAACQD3//3/CAAAAAAACAD3//7/CAAAAAAAAgD3////CAAAAAAACQD3/wAACAAAAAAACwD3/wEACgAAAAAAAAD3/wIACQAAAAAAAAD3/wMACAAAAAAAAwD3/wQACgAAAAAAAAD3/wUACgAAAAAAAAD3/wYACQAAAAAAAAD3/wcACAAAAAAAAwD3/wgACgAAAAAAAAD3/wkACgAAAAAAAAD3/woACgAAAAAAAAD3/wsACQAAAAAAAAD3/wwACAAAAAAAAwD4//P/CAAAAAAAAwD4//f/CAAAAAAACwD4//z/CQAAAAAAAAD4//3/CAAAAAAAAwD4//7/CgAAAAAAAAD4////CQAAAAAAAAD4/wAACAAAAAAAAwD4/wEACgAAAAAAAAD4/wIACQAAAAAAAAD4/wMACAAAAAAAAwD4/wQACgAAAAAAAAD4/wUACQAAAAAAAAD4/wYACAAAAAAABgD4/wcACAAAAAAAAQD4/wgACAAAAAAACAD4/wkACAAAAAAACAD4/woACAAAAAAACAD4/wsACAAAAAAACAD4/wwACAAAAAAACwD5//P/CAAAAAAAAwD5//f/CAAAAAAACwD5//j/CgAAAAAAAAD5//z/CQAAAAAAAAD5//3/CAAAAAAAAwD5//7/CgAAAAAAAAD5////CQAAAAAAAAD5/wAACAAAAAAAAwD5/wEACgAAAAAAAAD5/wIACQAAAAAAAAD5/wMACAAAAAAACgD5/wQACAAAAAAAAgD5/wUACAAAAAAAAgD5/wYACAAAAAAACQD5/wcACAAAAAAACQD5/wgACAAAAAAACQD5/wkACAAAAAAACQD5/woACAAAAAAACQD5/wsACAAAAAAACQD5/wwACAAAAAAACwD6//X/CgAAAAAAAAD6//f/CAAAAAAAAwD6//r/CAAAAAAAAwD6//3/CAAAAAAAAwD6//7/CgAAAAAAAAD6////CQAAAAAAAAD6/wAACAAAAAAAAwD6/wEACgAAAAAAAAD6/wIACQAAAAAAAAD6/wMACAAAAAAAAwD6/wQACgAAAAAAAAD6/wUACgAAAAAAAAD6/wYACgAAAAAAAAD6/wcACgAAAAAAAAD6/wgACgAAAAAAAAD6/wkACgAAAAAAAAD6/woACgAAAAAAAAD6/wsACQAAAAAAAAD6/wwACAAAAAAAAwD7//T/CAAAAAAABAD7//f/CAAAAAAAAwD7//j/CgAAAAAAAAD7//n/CQAAAAAAAAD7//7/CgAAAAAAAAD7////CQAAAAAAAAD7/wAACAAAAAAAAwD7/wEACgAAAAAAAAD7/wIACQAAAAAAAAD7/wMACAAAAAAACgD7/wQACAAAAAAAAgD7/wUACAAAAAAAAgD7/wYACAAAAAAAAgD7/wcACAAAAAAACAD7/wgACAAAAAAACAD7/wkACAAAAAAAAgD7/woACAAAAAAAAgD7/wsACAAAAAAAAgD7/wwACAAAAAAACwD8//P/CAAAAAAACgD8//T/CAAAAAAACwD8//f/CAAAAAAAAwD8//j/CgAAAAAAAAD8//n/CQAAAAAAAAD8//r/CAAAAAAAAwD8//v/CgAAAAAAAAD8//z/CgAAAAAAAAD8//3/CgAAAAAAAAD8//7/CgAAAAAAAAD8/wAACAAAAAAACgD8/wEACAAAAAAACAD8/wIACAAAAAAACAD8/wMACAAAAAAABQD8/wUACgAAAAAAAAD8/wYACQAAAAAAAAD8/wcACAAAAAAAAwD8/wgACAAAAAAAAwD8/wkACgAAAAAAAAD8/woACgAAAAAAAAD8/wsACQAAAAAAAAD8/wwACAAAAAAAAwD9//P/CAAAAAAACgD9//T/CAAAAAAAAQD9//X/CAAAAAAACAD9//b/CAAAAAAAAgD9//f/CAAAAAAACQD9//j/CAAAAAAACAD9//n/CAAAAAAACAD9//r/CAAAAAAAAQD9//v/CAAAAAAAAgD9//z/CAAAAAAAAgD9//3/CAAAAAAACAD9//7/CAAAAAAAAgD9////CAAAAAAAAgD9/wAACAAAAAAACQD9/wEACAAAAAAACQD9/wIACAAAAAAACQD9/wMACAAAAAAABAD9/wQACgAAAAAAAAD9/wUACQAAAAAAAAD9/wYACAAAAAAABgD9/wcACAAAAAAACQD9/wgACAAAAAAACQD9/wkACAAAAAAABAD9/woACgAAAAAAAAD9/wsACQAAAAAAAAD9/wwACAAAAAAAAwD+//P/CgAAAAAAAAD+//T/CAAAAAAACgD+//X/CAAAAAAACwD+//b/CgAAAAAAAAD+//f/CQAAAAAAAAD+//j/CAAAAAAACgD+//r/CAAAAAAACwD+//v/CgAAAAAAAAD+//z/CQAAAAAAAAD+//3/CAAAAAAAAwD+//7/CgAAAAAAAAD+////CgAAAAAAAAD+/wAACgAAAAAAAAD+/wEACgAAAAAAAAD+/wIACQAAAAAAAAD+/wMACAAAAAAAAwD+/wQACgAAAAAAAAD+/wUACQAAAAAAAAD+/wYACAAAAAAAAwD+/wcACgAAAAAAAAD+/wgACQAAAAAAAAD+/wkACAAAAAAACgD+/woACAAAAAAAAgD+/wsACAAAAAAAAgD+/wwACAAAAAAACwD///P/CwAAAAAAAAD///T/CAAAAAAACgD///X/CAAAAAAACwD///b/CgAAAAAAAAD///f/CQAAAAAAAAD///j/CAAAAAAABwD///n/CAAAAAAAAQD///r/CAAAAAAACwD///v/CgAAAAAAAAD///z/CQAAAAAAAAD///3/CAAAAAAAAwD///7/CgAAAAAAAAD//wEACgAAAAAAAAD//wIACQAAAAAAAAD//wMACAAAAAAAAwD//wQACgAAAAAAAAD//wUACQAAAAAAAAD//wYACAAAAAAAAwD//wcACgAAAAAAAAD//wgACQAAAAAAAAD//wkACAAAAAAAAwD//woACgAAAAAAAAD//wsACQAAAAAAAAD//wwACAAAAAAAAwAAAPP/CwAAAAAAAAAAAPT/CAAAAAAACgAAAPX/CAAAAAAACwAAAPb/CgAAAAAAAAAAAPf/CgAAAAAAAAAAAPj/CgAAAAAAAAAAAPn/CQAAAAAAAAAAAPr/CAAAAAAAAwAAAPv/CgAAAAAAAAAAAPz/CQAAAAAAAAAAAP3/CAAAAAAACgAAAP7/CAAAAAAAAgAAAAEACgAAAAAAAAAAAAIACQAAAAAAAAAAAAMACAAAAAAACgAAAAQACAAAAAAAAgAAAAUACAAAAAAAAgAAAAYACAAAAAAAAQAAAAcACAAAAAAAAgAAAAgACAAAAAAAAgAAAAkACAAAAAAACwAAAAoACgAAAAAAAAAAAAsACQAAAAAAAAAAAAwACAAAAAAAAwABAPP/CwAAAAAAAAABAPT/CAAAAAAACgABAPX/CAAAAAAACwABAPb/CgAAAAAAAAABAPf/CQAAAAAAAAABAPj/CAAAAAAABgABAPn/CAAAAAAAAQABAPr/CAAAAAAACwABAPv/CgAAAAAAAAABAPz/CQAAAAAAAAABAP3/CAAAAAAAAwABAP7/CgAAAAAAAAABAAEACgAAAAAAAAABAAIACQAAAAAAAAABAAMACAAAAAAAAwABAAQACgAAAAAAAAABAAUACQAAAAAAAAABAAYACAAAAAAAAwABAAcACgAAAAAAAAABAAgACQAAAAAAAAABAAkACAAAAAAAAwABAAoACgAAAAAAAAABAAsACQAAAAAAAAABAAwACAAAAAAAAwACAPP/CgAAAAAAAAACAPT/CAAAAAAACgACAPX/CAAAAAAACwACAPb/CgAAAAAAAAACAPf/CQAAAAAAAAACAPj/CAAAAAAACgACAPn/CAAAAAAAAQACAPr/CAAAAAAACwACAPv/CgAAAAAAAAACAPz/CQAAAAAAAAACAP3/CAAAAAAAAwACAP7/CgAAAAAAAAACAP//CgAAAAAAAAACAAAACgAAAAAAAAACAAEACgAAAAAAAAACAAIACQAAAAAAAAACAAMACAAAAAAAAwACAAQACgAAAAAAAAACAAUACQAAAAAAAAACAAYACAAAAAAAAwACAAcACgAAAAAAAAACAAgACQAAAAAAAAACAAkACAAAAAAACgACAAoACAAAAAAAAgACAAsACAAAAAAAAgACAAwACAAAAAAACwADAPP/CAAAAAAACgADAPT/CAAAAAAAAQADAPX/CAAAAAAACQADAPb/CAAAAAAAAgADAPf/CAAAAAAACAADAPj/CAAAAAAACQADAPn/CAAAAAAACQADAPr/CAAAAAAAAQADAPv/CAAAAAAAAgADAPz/CAAAAAAAAgADAP3/CAAAAAAACQADAP7/CAAAAAAAAgADAP//CAAAAAAAAgADAAAACAAAAAAACAADAAEACAAAAAAACAADAAIACAAAAAAACAADAAMACAAAAAAACwADAAQACgAAAAAAAAADAAUACQAAAAAAAAADAAYACAAAAAAABwADAAcACAAAAAAACAADAAgACAAAAAAACAADAAkACAAAAAAABQADAAoACgAAAAAAAAADAAsACQAAAAAAAAADAAwACAAAAAAAAwAEAPP/CAAAAAAACgAEAPT/CAAAAAAACwAEAPX/CgAAAAAAAAAEAPj/CgAAAAAAAAAEAPn/CQAAAAAAAAAEAPr/CAAAAAAAAwAEAPv/CgAAAAAAAAAEAPz/CgAAAAAAAAAEAP3/CgAAAAAAAAAEAP7/CgAAAAAAAAAEAP//CQAAAAAAAAAEAAAACAAAAAAACgAEAAEACAAAAAAACQAEAAIACAAAAAAACQAEAAMACAAAAAAACwAEAAQACgAAAAAAAAAEAAUACgAAAAAAAAAEAAYACQAAAAAAAAAEAAcACAAAAAAACgAEAAgACAAAAAAACwAEAAkACgAAAAAAAAAEAAoACgAAAAAAAAAEAAsACQAAAAAAAAAEAAwACAAAAAAAAwAFAPT/CAAAAAAABQAFAPX/CgAAAAAAAAAFAP7/CgAAAAAAAAAFAP//CQAAAAAAAAAFAAAACAAAAAAAAwAFAAEACgAAAAAAAAAFAAIACQAAAAAAAAAFAAMACAAAAAAACgAFAAQACAAAAAAAAgAFAAUACAAAAAAAAgAFAAYACAAAAAAAAgAFAAcACAAAAAAACQAFAAgACAAAAAAACQAFAAkACAAAAAAAAgAFAAoACAAAAAAAAgAFAAsACAAAAAAAAgAFAAwACAAAAAAACwAGAPT/CgAAAAAAAAAGAPX/CgAAAAAAAAAGAPj/CgAAAAAAAAAGAPn/CQAAAAAAAAAGAPr/CAAAAAAAAwAGAP3/CAAAAAAAAwAGAP7/CgAAAAAAAAAGAP//CQAAAAAAAAAGAAAACAAAAAAAAwAGAAEACgAAAAAAAAAGAAIACQAAAAAAAAAGAAMACAAAAAAAAwAGAAQACgAAAAAAAAAGAAUACgAAAAAAAAAGAAYACgAAAAAAAAAGAAcACgAAAAAAAAAGAAgACgAAAAAAAAAGAAkACgAAAAAAAAAGAAoACgAAAAAAAAAGAAsACQAAAAAAAAAGAAwACAAAAAAAAwAHAPP/CAAAAAAAAwAHAPT/CgAAAAAAAAAHAPf/CAAAAAAACwAHAPj/CgAAAAAAAAAHAP3/CAAAAAAAAwAHAP7/CgAAAAAAAAAHAP//CQAAAAAAAAAHAAAACAAAAAAAAwAHAAEACgAAAAAAAAAHAAIACQAAAAAAAAAHAAMACAAAAAAACgAHAAQACAAAAAAAAgAHAAUACAAAAAAAAgAHAAYACAAAAAAACAAHAAcACAAAAAAACAAHAAgACAAAAAAACAAHAAkACAAAAAAACAAHAAoACAAAAAAACAAHAAsACAAAAAAACAAHAAwACAAAAAAACwAIAPP/CAAAAAAAAwAIAPT/CgAAAAAAAAAIAPf/CAAAAAAACwAIAP3/CAAAAAAAAwAIAP7/CgAAAAAAAAAIAP//CQAAAAAAAAAIAAAACAAAAAAAAwAIAAEACgAAAAAAAAAIAAIACQAAAAAAAAAIAAMACAAAAAAAAwAIAAQACgAAAAAAAAAIAAUACQAAAAAAAAAIAAYACAAAAAAABwAIAAcACAAAAAAAAQAIAAgACAAAAAAACQAIAAkACAAAAAAACQAIAAoACAAAAAAACQAIAAsACAAAAAAACQAIAAwACAAAAAAACwAJAPP/CAAAAAAACgAJAPT/CAAAAAAAAgAJAPX/CAAAAAAAAgAJAPb/CAAAAAAACQAJAPf/CAAAAAAACQAJAP3/CAAAAAAACQAJAP7/CAAAAAAAAgAJAP//CAAAAAAABAAJAAAACAAAAAAAAwAJAAEACgAAAAAAAAAJAAIACQAAAAAAAAAJAAMACAAAAAAAAwAJAAQACgAAAAAAAAAJAAUACgAAAAAAAAAJAAcACAAAAAAAAwAJAAgACgAAAAAAAAAJAAkACgAAAAAAAAAJAAoACgAAAAAAAAAJAAsACQAAAAAAAAAJAAwACAAAAAAAAwAKAPP/CAAAAAAAAwAKAPT/CgAAAAAAAAAKAPn/CAAAAAAAAwAKAP3/CgAAAAAAAAAKAP7/CQAAAAAAAAAKAP//CAAAAAAACgAKAAAACAAAAAAACQAKAAEACAAAAAAAAgAKAAIACAAAAAAAAgAKAAMACAAAAAAACQAKAAQACAAAAAAAAgAKAAUACAAAAAAACAAKAAYACAAAAAAACAAKAAcACAAAAAAAAQAKAAgACAAAAAAACAAKAAkACAAAAAAACAAKAAoACAAAAAAAAgAKAAsACAAAAAAAAgAKAAwACAAAAAAACwALAPT/CgAAAAAAAAALAP3/CgAAAAAAAAALAP7/CQAAAAAAAAALAP//CAAAAAAAAwALAAAACgAAAAAAAAALAAEACgAAAAAAAAALAAIACgAAAAAAAAALAAQACQAAAAAAAAALAAUACAAAAAAACgALAAYACAAAAAAACQALAAcACAAAAAAACQALAAgACAAAAAAACQALAAoACgAAAAAAAAALAAsACQAAAAAAAAAMAPT/CgAAAAAAAAAMAPz/CAAAAAAAAwAMAP3/CgAAAAAAAAAMAAQACAAAAAAAAgAMAAUACAAAAAAACwAMAAYACgAAAAAAAAAMAAcACgAAAAAAAAAMAAgACgAAAAAAAAAMAAkACgAAAAAAAAAMAAoACgAAAAAAAAAMAAsACQAAAAAAAAANAPP/CAAAAAAAAwANAPT/CgAAAAAAAAANAPX/CgAAAAAAAAANAPb/CgAAAAAAAAANAPf/CgAAAAAAAAANAPj/CgAAAAAAAAANAPn/CgAAAAAAAAANAPr/CgAAAAAAAAANAPz/CAAAAAAAAwANAP3/CgAAAAAAAAANAP7/CgAAAAAAAAANAP//CgAAAAAAAAANAAAACgAAAAAAAAANAAEACgAAAAAAAAANAAIACgAAAAAAAAANAAQACQAAAAAAAAANAAUACAAAAAAAAwANAAYACgAAAAAAAAANAAcACQAAAAAAAAANAAgACAAAAAAABgANAAkACAAAAAAACAANAAoACAAAAAAACAANAAsACAAAAAAACAANAAwACAAAAAAACwD8/wQACgAAAAAAAAD0/wwACAAAAAAAAwD1/wwACAAAAAAAAwALAAwACAAAAAAAAwAMAAwACAAAAAAAAwAOAPP/CAAAAAAABwAOAPT/CAAAAAAAAgAOAPX/CAAAAAAAAgAOAPb/CAAAAAAAAgAOAPf/CAAAAAAAAgAOAPj/CAAAAAAAAgAOAPn/CAAAAAAAAgAOAPr/CAAAAAAAAgAOAPv/CAAAAAAAAgAOAPz/CAAAAAAACQAOAP3/CAAAAAAAAgAOAP7/CAAAAAAAAgAOAP//CAAAAAAAAgAOAAAACAAAAAAAAgAOAAEACAAAAAAAAgAOAAIACAAAAAAAAgAOAAMACAAAAAAAAgAOAAQACAAAAAAAAgAOAAUACAAAAAAACQAOAAYACAAAAAAAAgAOAAcACAAAAAAAAgAOAAgACAAAAAAACQAOAAkACAAAAAAACQAOAAoACAAAAAAACQAOAAsACAAAAAAACQAOAAwACAAAAAAABQD1/wkACAAAAAAABAALAAkACAAAAAAABQD/////CQAAAAAAAAD//wAACAAAAAAAAwAAAP//CAAAAAAAAgAAAAAACAAAAAAACwABAP//CQAAAAAAAAABAAAACAAAAAAAAwD5//b/CAAAAAAABwD4//b/CAAAAAAACgD0//P/CAAAAAAAAwD1//P/CAAAAAAAAwD6//P/CAAAAAAAAwD7//P/CAAAAAAACgAFAPP/CAAAAAAACgAGAPP/CAAAAAAAAwALAPP/CAAAAAAAAwAMAPP/CAAAAAAAAwD///L/CwAAAAAAAAAAAPL/CwAAAAAAAAABAPL/CwAAAAAAAAD+//n/CAAAAAAAAQD0//7/CQAAAAAAAAD0////CAAAAAAABgD0/wAACAAAAAAAAgD0/wEACAAAAAAAAgD0/wIACAAAAAAAAgD0/wMACAAAAAAAAgDz/wMACgAAAAAAAADz/wQACQAAAAAAAAAMAP7/CQAAAAAAAAAMAP//CAAAAAAABwAMAAAACAAAAAAAAgAMAAEACAAAAAAAAgAMAAIACAAAAAAAAgAMAAMACAAAAAAAAgALAAMACgAAAAAAAAANAAMACgAAAAAAAAAJAAYACQAAAAAAAAD0//X/CQAAAAAAAAD1//X/CQAAAAAAAAD2//X/CgAAAAAAAAAKAPX/CgAAAAAAAAALAPX/CQAAAAAAAAAMAPX/CQAAAAAAAAD2//b/CgAAAAAAAAAKAPb/CgAAAAAAAAD0//b/CAAAAAAABgD0//f/CAAAAAAAAgD0//j/CAAAAAAAAgD0//n/CAAAAAAABAD0//r/CgAAAAAAAAD0//v/CQAAAAAAAAD1//j/CQAAAAAAAAD1//n/CAAAAAAAAwD1//r/CgAAAAAAAAD1//v/CQAAAAAAAAALAPj/CQAAAAAAAAALAPn/CAAAAAAAAwALAPr/CgAAAAAAAAAMAPf/CAAAAAAAAgAMAPj/CAAAAAAAAgAMAPn/CAAAAAAABQAMAPr/CgAAAAAAAAAKAPf/CgAAAAAAAAALAPf/CgAAAAAAAAAKAPj/CQAAAAAAAAALAPb/CAAAAAAAAwAJAPj/CAAAAAAAAgAHAPv/CgAAAAAAAAAIAPv/CgAAAAAAAAAHAPz/CQAAAAAAAAAIAPz/CQAAAAAAAAALAPv/CQAAAAAAAAAMAPv/CQAAAAAAAAANAPv/CQAAAAAAAAALAPz/CAAAAAAAAwAJAPr/CAAAAAAAAgAJAPn/CAAAAAAACAAKAPv/CQAAAAAAAAAKAPz/CAAAAAAAAwAKAPr/CgAAAAAAAAAJAPv/CAAAAAAAAgAJAPz/CAAAAAAACAD2//f/CgAAAAAAAAD1//f/CgAAAAAAAAD1//b/CAAAAAAAAwD3//j/CAAAAAAAAgD3//n/CAAAAAAACQD3//r/CAAAAAAAAgD3//v/CAAAAAAAAgD4//j/CgAAAAAAAAD4//n/CgAAAAAAAAD4//r/CgAAAAAAAAAEAPb/CQAAAAAAAAAFAPb/CQAAAAAAAAAGAPb/CQAAAAAAAAAHAPX/CQAAAAAAAAAIAPX/CQAAAAAAAAAEAPf/CAAAAAAAAwAFAPf/CAAAAAAAAwAGAPf/CAAAAAAAAwAHAPb/CAAAAAAABgAIAPb/CAAAAAAACgAIAPr/CgAAAAAAAAAIAPj/CgAAAAAAAAAIAPn/CgAAAAAAAAAHAPn/CQAAAAAAAAAHAPr/CAAAAAAAAwAFAPj/CgAAAAAAAAAFAPn/CQAAAAAAAAD4//T/CgAAAAAAAAD5//T/CgAAAAAAAAD6//T/CgAAAAAAAAD7//X/CgAAAAAAAAD8//X/CgAAAAAAAAD8//b/CQAAAAAAAAD7//b/CQAAAAAAAAD6//b/CQAAAAAAAAD5//X/CQAAAAAAAAD4//X/CQAAAAAAAAD6//n/CQAAAAAAAAD5//n/CQAAAAAAAAD5//r/CAAAAAAAAwD5//v/CgAAAAAAAAD4//v/CgAAAAAAAAD6//j/CgAAAAAAAAD7//r/CAAAAAAACgAFAPr/CAAAAAAACgD8////CQAAAAAAAAAFAPv/CAAAAAAAAgAFAPz/CAAAAAAAAgAFAP3/CAAAAAAABAD7//v/CAAAAAAAAgD7//z/CAAAAAAAAgD7//3/CAAAAAAABQAGAPz/CQAAAAAAAAD6//z/CQAAAAAAAAD6//v/CgAAAAAAAAAGAPv/CgAAAAAAAAAMAPb/CAAAAAAABwA=")
 tile_set = SubResource("TileSet_dg77c")
 rendering_quadrant_size = 32
 physics_quadrant_size = 32
 
-[node name="Camera2D" type="Camera2D" parent="Level_1"]
+[node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.7, 0.7)
 
-[node name="Player" parent="Level_1" instance=ExtResource("6_ubhxj")]
+[node name="Player" parent="." instance=ExtResource("6_ubhxj")]
 position = Vector2(17, 300)
 collision_mask = 6
 
-[node name="Collectibles" type="Node" parent="Level_1"]
+[node name="Collectibles" type="Node" parent="."]
 
-[node name="Wine" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(16, 246)
 
-[node name="Wine2" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine2" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(16, 146)
 
-[node name="Wine3" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine3" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-111, 239)
 
-[node name="Wine4" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine4" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(143, 239)
 
-[node name="Wine5" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine5" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-81, -46)
 
-[node name="Wine6" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine6" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(111, -44)
 
-[node name="Wine7" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine7" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-10, -245)
 
-[node name="Wine8" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine8" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(48, -242)
 
-[node name="Wine9" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine9" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(108, -401)
 
-[node name="Wine10" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine10" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-80, -401)
 
-[node name="Wine11" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine11" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-207, -176)
 
-[node name="Wine12" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine12" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(240, -174)
 
-[node name="Wine13" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine13" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(11, -333)
 
-[node name="Wine14" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine14" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(-333, -304)
 
-[node name="Wine15" parent="Level_1/Collectibles" instance=ExtResource("7_65or1")]
+[node name="Wine15" parent="Collectibles" instance=ExtResource("7_65or1")]
 position = Vector2(368, -304)
 
-[node name="Stick" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(17, 176)
 
-[node name="Stick2" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick2" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-50, 208)
 
-[node name="Stick3" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick3" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, 209)
 
-[node name="Stick4" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick4" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-80, 237)
 
-[node name="Stick5" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick5" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(76, 210)
 
-[node name="Stick6" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick6" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 211)
 
-[node name="Stick7" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick7" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(115, 240)
 
-[node name="Stick8" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick8" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(239, 240)
 
-[node name="Stick9" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick9" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-17, -333)
 
-[node name="Stick10" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick10" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(80, -332)
 
-[node name="Stick11" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick11" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-49, -333)
 
-[node name="Stick12" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick12" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(46, -335)
 
-[node name="Stick13" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick13" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(173, -272)
 
-[node name="Stick14" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick14" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(144, -272)
 
-[node name="Stick15" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick15" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(303, -269)
 
-[node name="Stick16" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick16" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(274, -270)
 
-[node name="Stick17" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick17" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(244, -271)
 
-[node name="Stick18" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick18" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(208, -272)
 
-[node name="Stick19" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick19" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(305, -238)
 
-[node name="Stick20" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick20" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(369, -207)
 
-[node name="Stick21" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick21" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(328, -209)
 
-[node name="Stick22" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick22" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, -206)
 
-[node name="Stick23" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick23" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, -304)
 
-[node name="Stick24" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick24" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(399, -301)
 
-[node name="Stick25" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick25" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(403, -269)
 
-[node name="Stick26" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick26" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(402, -237)
 
-[node name="Stick27" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick27" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(399, -208)
 
-[node name="Stick28" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick28" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, -366)
 
-[node name="Stick29" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick29" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(301, -337)
 
-[node name="Stick30" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick30" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -277)
 
-[node name="Stick31" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick31" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(113, -308)
 
-[node name="Stick32" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick32" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -331)
 
-[node name="Stick33" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick33" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-81, -273)
 
-[node name="Stick34" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick34" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, -302)
 
-[node name="Stick35" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick35" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, -329)
 
-[node name="Stick36" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick36" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-171, -274)
 
-[node name="Stick37" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick37" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-139, -274)
 
-[node name="Stick38" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick38" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-109, -272)
 
-[node name="Stick39" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick39" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-268, -274)
 
-[node name="Stick40" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick40" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-235, -274)
 
-[node name="Stick41" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick41" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-203, -272)
 
-[node name="Stick42" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick42" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-366, -208)
 
-[node name="Stick43" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick43" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-332, -208)
 
-[node name="Stick44" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick44" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-304, -210)
 
-[node name="Stick45" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick45" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-269, -212)
 
-[node name="Stick46" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick46" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-269, -242)
 
-[node name="Stick47" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick47" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-366, -300)
 
-[node name="Stick48" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick48" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-366, -267)
 
-[node name="Stick49" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick49" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-365, -235)
 
-[node name="Stick50" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick50" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-271, -364)
 
-[node name="Stick51" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick51" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-269, -331)
 
-[node name="Stick52" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick52" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-269, -304)
 
-[node name="Stick53" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick53" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-209, -82)
 
-[node name="Stick54" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick54" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-240, -82)
 
-[node name="Stick55" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick55" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-272, -83)
 
-[node name="Stick56" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick56" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-272, -117)
 
-[node name="Stick57" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick57" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-271, -148)
 
-[node name="Stick58" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick58" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-272, -177)
 
-[node name="Stick59" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick59" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-142, -142)
 
-[node name="Stick60" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick60" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-142, -111)
 
-[node name="Stick61" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick61" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-175, -79)
 
-[node name="Stick62" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick62" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-146, -80)
 
-[node name="Stick63" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick63" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-175, -178)
 
-[node name="Stick64" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick64" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-140, -173)
 
-[node name="Stick65" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick65" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-48, -176)
 
-[node name="Stick66" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick66" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, -173)
 
-[node name="Stick67" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick67" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-114, -173)
 
-[node name="Stick68" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick68" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -245)
 
-[node name="Stick69" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick69" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-77, -208)
 
-[node name="Stick70" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick70" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, -242)
 
-[node name="Stick71" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick71" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(143, -176)
 
-[node name="Stick72" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick72" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -176)
 
-[node name="Stick73" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick73" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -215)
 
-[node name="Stick74" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick74" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(175, -80)
 
-[node name="Stick75" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick75" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(175, -114)
 
-[node name="Stick76" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick76" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(177, -144)
 
-[node name="Stick77" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick77" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(208, -176)
 
-[node name="Stick78" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick78" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(174, -175)
 
-[node name="Stick79" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick79" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(271, -80)
 
-[node name="Stick80" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick80" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(242, -80)
 
-[node name="Stick81" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick81" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(209, -82)
 
-[node name="Stick82" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick82" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(304, -82)
 
-[node name="Stick83" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick83" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(306, -111)
 
-[node name="Stick84" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick84" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(306, -142)
 
-[node name="Stick85" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick85" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, -174)
 
-[node name="Stick86" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick86" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(336, -21)
 
-[node name="Stick87" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick87" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(304, -21)
 
-[node name="Stick88" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick88" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(305, -52)
 
-[node name="Stick89" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick89" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(400, 141)
 
-[node name="Stick90" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick90" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(402, 111)
 
-[node name="Stick91" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick91" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(397, 77)
 
-[node name="Stick92" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick92" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(400, 46)
 
-[node name="Stick93" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick93" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(400, 14)
 
-[node name="Stick94" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick94" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(398, -20)
 
-[node name="Stick95" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick95" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(369, -20)
 
-[node name="Stick96" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick96" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(401, 399)
 
-[node name="Stick97" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick97" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 307)
 
-[node name="Stick98" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick98" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(369, 302)
 
-[node name="Stick99" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick99" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(368, 272)
 
-[node name="Stick100" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick100" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(367, 241)
 
-[node name="Stick101" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick101" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(367, 207)
 
-[node name="Stick102" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick102" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(369, 176)
 
-[node name="Stick103" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick103" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(430, 176)
 
-[node name="Stick104" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick104" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(401, 175)
 
-[node name="Stick105" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick105" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 336)
 
-[node name="Stick106" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick106" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -140)
 
-[node name="Stick107" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick107" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -110)
 
-[node name="Stick108" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick108" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, -77)
 
-[node name="Stick109" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick109" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(466, -43)
 
-[node name="Stick110" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick110" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, -13)
 
-[node name="Stick111" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick111" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(466, 21)
 
-[node name="Stick112" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick112" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 49)
 
-[node name="Stick113" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick113" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, 83)
 
-[node name="Stick114" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick114" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, 113)
 
-[node name="Stick115" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick115" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 145)
 
-[node name="Stick116" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick116" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 177)
 
-[node name="Stick117" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick117" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 208)
 
-[node name="Stick118" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick118" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(369, 400)
 
-[node name="Stick119" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick119" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 396)
 
-[node name="Stick120" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick120" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 364)
 
-[node name="Stick121" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick121" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(401, -400)
 
-[node name="Stick122" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick122" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(433, -398)
 
-[node name="Stick123" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick123" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(466, -405)
 
-[node name="Stick124" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick124" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, -368)
 
-[node name="Stick125" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick125" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -336)
 
-[node name="Stick126" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick126" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -304)
 
-[node name="Stick127" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick127" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -270)
 
-[node name="Stick128" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick128" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, -238)
 
-[node name="Stick129" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick129" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -206)
 
-[node name="Stick130" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick130" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, -173)
 
-[node name="Stick131" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick131" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(174, -368)
 
-[node name="Stick132" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick132" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(208, -398)
 
-[node name="Stick133" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick133" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, -400)
 
-[node name="Stick134" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick134" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(142, -402)
 
-[node name="Stick135" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick135" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(109, -370)
 
-[node name="Stick136" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick136" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(240, -400)
 
-[node name="Stick137" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick137" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(272, -400)
 
-[node name="Stick138" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick138" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, -396)
 
-[node name="Stick139" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick139" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(334, -398)
 
-[node name="Stick140" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick140" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(373, -398)
 
-[node name="Stick141" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick141" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(334, 112)
 
-[node name="Stick142" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick142" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(334, 142)
 
-[node name="Stick143" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick143" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(338, 174)
 
-[node name="Stick144" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick144" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(336, 208)
 
-[node name="Stick145" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick145" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(336, 242)
 
-[node name="Stick146" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick146" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(336, 275)
 
-[node name="Stick147" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick147" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(274, 112)
 
-[node name="Stick148" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick148" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(304, 110)
 
-[node name="Stick149" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick149" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(302, 238)
 
-[node name="Stick150" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick150" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(146, -373)
 
-[node name="Stick151" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick151" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(240, 206)
 
-[node name="Stick152" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick152" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(240, 174)
 
-[node name="Stick153" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick153" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(431, -111)
 
-[node name="Stick154" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick154" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(339, -111)
 
-[node name="Stick155" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick155" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(240, 141)
 
-[node name="Stick156" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick156" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(79, 371)
 
-[node name="Stick157" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick157" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(79, 339)
 
-[node name="Stick158" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick158" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(80, 304)
 
-[node name="Stick159" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick159" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 304)
 
-[node name="Stick160" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick160" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 334)
 
-[node name="Stick161" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick161" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 366)
 
-[node name="Stick162" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick162" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 302)
 
-[node name="Stick163" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick163" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 268)
 
-[node name="Stick164" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick164" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(141, 268)
 
-[node name="Stick165" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick165" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 272)
 
-[node name="Stick166" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick166" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 236)
 
-[node name="Stick167" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick167" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 208)
 
-[node name="Stick168" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick168" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(178, 176)
 
-[node name="Stick169" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick169" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(178, 146)
 
-[node name="Stick170" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick170" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(178, 114)
 
-[node name="Stick171" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick171" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(210, 112)
 
-[node name="Stick172" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick172" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(243, 112)
 
-[node name="Stick173" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick173" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 79)
 
-[node name="Stick174" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick174" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(337, 47)
 
-[node name="Stick175" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick175" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(334, 13)
 
-[node name="Stick176" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick176" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(176, 15)
 
-[node name="Stick177" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick177" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(208, 13)
 
-[node name="Stick178" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick178" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(274, 13)
 
-[node name="Stick179" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick179" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(243, 15)
 
-[node name="Stick180" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick180" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(305, 10)
 
-[node name="Stick181" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick181" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 398)
 
-[node name="Stick182" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick182" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(144, 398)
 
-[node name="Stick183" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick183" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(174, 398)
 
-[node name="Stick184" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick184" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(206, 400)
 
-[node name="Stick185" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick185" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(241, 400)
 
-[node name="Stick186" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick186" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(273, 400)
 
-[node name="Stick187" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick187" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(303, 400)
 
-[node name="Stick188" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick188" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(238, 366)
 
-[node name="Stick189" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick189" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(236, 336)
 
-[node name="Stick190" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick190" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(239, 308)
 
-[node name="Stick191" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick191" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(434, 398)
 
-[node name="Stick192" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick192" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(46, 19)
 
-[node name="Stick193" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick193" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-18, 207)
 
-[node name="Stick194" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick194" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(18, 397)
 
-[node name="Stick195" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick195" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(49, 398)
 
-[node name="Stick196" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick196" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(81, 397)
 
-[node name="Stick197" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick197" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(269, 308)
 
-[node name="Stick198" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick198" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(271, 273)
 
-[node name="Stick199" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick199" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(274, 239)
 
-[node name="Stick200" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick200" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(271, 207)
 
-[node name="Stick201" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick201" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-174, 113)
 
-[node name="Stick202" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick202" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-144, 113)
 
-[node name="Stick203" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick203" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-145, 149)
 
-[node name="Stick204" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick204" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-145, 179)
 
-[node name="Stick205" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick205" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-147, 209)
 
-[node name="Stick206" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick206" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-144, 241)
 
-[node name="Stick207" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick207" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-142, 269)
 
-[node name="Stick208" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick208" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-145, 303)
 
-[node name="Stick209" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick209" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-144, 336)
 
-[node name="Stick210" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick210" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-145, 368)
 
-[node name="Stick211" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick211" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-112, 271)
 
-[node name="Stick212" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick212" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-82, 271)
 
-[node name="Stick213" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick213" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-78, 306)
 
-[node name="Stick214" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick214" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-48, 303)
 
-[node name="Stick215" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick215" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-48, 395)
 
-[node name="Stick216" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick216" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-50, 363)
 
-[node name="Stick217" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick217" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-48, 333)
 
-[node name="Stick218" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick218" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-11, 397)
 
-[node name="Stick219" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick219" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(44, 209)
 
-[node name="Stick220" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick220" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(19, 207)
 
-[node name="Stick221" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick221" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, 207)
 
-[node name="Stick222" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick222" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-302, 172)
 
-[node name="Stick223" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick223" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-303, 143)
 
-[node name="Stick224" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick224" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-303, 115)
 
-[node name="Stick225" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick225" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-268, 113)
 
-[node name="Stick226" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick226" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-238, 113)
 
-[node name="Stick227" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick227" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 113)
 
-[node name="Stick228" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick228" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-176, 400)
 
-[node name="Stick229" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick229" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-146, 397)
 
-[node name="Stick230" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick230" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-110, 398)
 
-[node name="Stick231" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick231" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-80, 398)
 
-[node name="Stick232" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick232" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(147, 111)
 
-[node name="Stick233" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick233" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(113, 110)
 
-[node name="Stick234" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick234" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(77, 113)
 
-[node name="Stick235" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick235" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(46, 113)
 
-[node name="Stick236" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick236" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(15, 111)
 
-[node name="Stick237" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick237" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-16, 111)
 
-[node name="Stick238" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick238" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-47, 111)
 
-[node name="Stick239" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick239" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-80, 113)
 
-[node name="Stick240" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick240" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-112, 113)
 
-[node name="Stick241" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick241" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 336)
 
-[node name="Stick242" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick242" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-206, 368)
 
-[node name="Stick243" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick243" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-309, 398)
 
-[node name="Stick244" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick244" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-303, 365)
 
-[node name="Stick245" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick245" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, 334)
 
-[node name="Stick246" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick246" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, 303)
 
-[node name="Stick247" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick247" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, 271)
 
-[node name="Stick248" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick248" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, 239)
 
-[node name="Stick249" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick249" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-268, 239)
 
-[node name="Stick250" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick250" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-241, 207)
 
-[node name="Stick251" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick251" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-240, 237)
 
-[node name="Stick252" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick252" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-238, 272)
 
-[node name="Stick253" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick253" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-240, 306)
 
-[node name="Stick254" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick254" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-275, 398)
 
-[node name="Stick255" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick255" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 398)
 
-[node name="Stick256" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick256" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-238, 398)
 
-[node name="Stick257" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick257" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 241)
 
-[node name="Stick258" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick258" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 203)
 
-[node name="Stick259" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick259" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-209, 175)
 
-[node name="Stick260" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick260" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-206, 147)
 
-[node name="Stick261" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick261" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-208, 306)
 
-[node name="Stick262" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick262" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-302, 81)
 
-[node name="Stick263" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick263" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-304, 49)
 
-[node name="Stick264" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick264" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-302, 17)
 
-[node name="Stick265" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick265" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-305, -18)
 
-[node name="Stick266" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick266" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-339, -13)
 
-[node name="Stick267" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick267" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-369, -13)
 
-[node name="Stick268" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick268" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-371, 15)
 
-[node name="Stick269" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick269" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-366, 49)
 
-[node name="Stick270" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick270" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-366, 81)
 
-[node name="Stick271" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick271" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-369, 113)
 
-[node name="Stick272" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick272" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-371, 147)
 
-[node name="Stick273" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick273" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-371, 178)
 
-[node name="Stick274" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick274" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-332, 177)
 
-[node name="Stick275" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick275" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-336, 212)
 
-[node name="Stick276" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick276" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-334, 242)
 
-[node name="Stick277" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick277" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-334, 274)
 
-[node name="Stick278" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick278" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-334, 302)
 
-[node name="Stick279" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick279" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(240, 276)
 
-[node name="Stick280" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick280" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-206, 272)
 
-[node name="Stick281" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick281" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-177, 16)
 
-[node name="Stick282" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick282" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-213, 15)
 
-[node name="Stick283" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick283" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-435, 208)
 
-[node name="Stick284" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick284" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-245, 15)
 
-[node name="Stick285" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick285" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 272)
 
-[node name="Stick286" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick286" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-431, 302)
 
-[node name="Stick287" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick287" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 334)
 
-[node name="Stick288" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick288" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-431, 365)
 
-[node name="Stick289" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick289" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 401)
 
-[node name="Stick290" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick290" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-335, 400)
 
-[node name="Stick291" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick291" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-367, 400)
 
-[node name="Stick292" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick292" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-401, 401)
 
-[node name="Stick293" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick293" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-403, 176)
 
-[node name="Stick294" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick294" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-401, 300)
 
-[node name="Stick295" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick295" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-399, 270)
 
-[node name="Stick296" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick296" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-401, -114)
 
-[node name="Stick297" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick297" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-303, -114)
 
-[node name="Stick298" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick298" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-273, -49)
 
-[node name="Stick299" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick299" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-273, -19)
 
-[node name="Stick300" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick300" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-272, 17)
 
-[node name="Stick301" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick301" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 178)
 
-[node name="Stick302" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick302" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-84, 19)
 
-[node name="Stick303" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick303" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-81, -13)
 
-[node name="Stick304" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick304" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -80)
 
-[node name="Stick305" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick305" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-79, -79)
 
-[node name="Stick306" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick306" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -118)
 
-[node name="Stick307" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick307" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(111, -146)
 
-[node name="Stick308" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick308" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-81, -111)
 
-[node name="Stick309" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick309" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-19, -210)
 
-[node name="Stick310" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick310" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-49, -238)
 
-[node name="Stick311" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick311" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-47, -210)
 
-[node name="Stick312" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick312" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(77, -243)
 
-[node name="Stick313" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick313" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(79, -208)
 
-[node name="Stick314" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick314" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(50, -210)
 
-[node name="Stick315" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick315" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(79, -176)
 
-[node name="Stick316" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick316" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(47, -178)
 
-[node name="Stick317" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick317" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(17, -178)
 
-[node name="Stick318" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick318" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-15, -176)
 
-[node name="Stick319" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick319" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-82, -139)
 
-[node name="Stick320" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick320" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 240)
 
-[node name="Stick321" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick321" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-112, 83)
 
-[node name="Stick322" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick322" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-110, 48)
 
-[node name="Stick323" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick323" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-143, 15)
 
-[node name="Stick324" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick324" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-209, -400)
 
-[node name="Stick325" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick325" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-240, -402)
 
-[node name="Stick326" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick326" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-143, -400)
 
-[node name="Stick327" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick327" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-142, -367)
 
-[node name="Stick328" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick328" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-271, -399)
 
-[node name="Stick329" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick329" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-304, -400)
 
-[node name="Stick330" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick330" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-338, -399)
 
-[node name="Stick331" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick331" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-368, -400)
 
-[node name="Stick332" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick332" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-400, -400)
 
-[node name="Stick333" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick333" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, -368)
 
-[node name="Stick334" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick334" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-436, -400)
 
-[node name="Stick335" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick335" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, -333)
 
-[node name="Stick336" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick336" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, -302)
 
-[node name="Stick337" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick337" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, -272)
 
-[node name="Stick338" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick338" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-431, -239)
 
-[node name="Stick339" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick339" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, -205)
 
-[node name="Stick340" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick340" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-435, -172)
 
-[node name="Stick341" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick341" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, -142)
 
-[node name="Stick342" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick342" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-431, -112)
 
-[node name="Stick343" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick343" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, -78)
 
-[node name="Stick344" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick344" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, -16)
 
-[node name="Stick345" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick345" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, -50)
 
-[node name="Stick346" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick346" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-433, 16)
 
-[node name="Stick347" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick347" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, 49)
 
-[node name="Stick348" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick348" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, 81)
 
-[node name="Stick349" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick349" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-432, 114)
 
-[node name="Stick350" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick350" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-431, 146)
 
-[node name="Stick351" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick351" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-18, 16)
 
-[node name="Stick352" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick352" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(17, -19)
 
-[node name="Stick353" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick353" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(83, -81)
 
-[node name="Stick354" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick354" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(49, -84)
 
-[node name="Stick355" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick355" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(17, -84)
 
-[node name="Stick356" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick356" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(16, -50)
 
-[node name="Stick357" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick357" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-17, -82)
 
-[node name="Stick358" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick358" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-47, -82)
 
-[node name="Stick359" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick359" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-80, -368)
 
-[node name="Stick360" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick360" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-110, -368)
 
-[node name="Stick361" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick361" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-112, -402)
 
-[node name="Stick362" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick362" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-175, -402)
 
-[node name="Stick363" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick363" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, -15)
 
-[node name="Stick364" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick364" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 17)
 
-[node name="Stick365" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick365" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(114, 76)
 
-[node name="Stick366" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick366" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(144, 76)
 
-[node name="Stick367" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick367" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(141, 45)
 
-[node name="Stick368" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick368" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(112, 45)
 
-[node name="Stick369" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick369" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-81, 82)
 
-[node name="Stick370" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick370" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(-81, 48)
 
-[node name="Stick371" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick371" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 303)
 
-[node name="Stick372" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick372" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, 239)
 
-[node name="Stick373" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick373" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, 273)
 
-[node name="Stick374" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick374" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(431, 303)
 
-[node name="Stick375" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick375" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(433, 271)
 
-[node name="Stick376" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick376" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(463, 393)
 
-[node name="Stick377" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick377" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 365)
 
-[node name="Stick378" parent="Level_1/Collectibles" instance=ExtResource("8_lhbbi")]
+[node name="Stick378" parent="Collectibles" instance=ExtResource("8_lhbbi")]
 position = Vector2(465, 333)
 
-[node name="Non_Collectibles" type="Node" parent="Level_1"]
+[node name="Non_Collectibles" type="Node" parent="."]
 
-[node name="Sheep" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(140, 15)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep2" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep2" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-114, 20)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep3" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep3" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(369, -109)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep4" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep4" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-367, -111)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep5" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep5" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-398, 334)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep6" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep6" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(431, 337)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep7" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep7" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-239, 370)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep8" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep8" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-240, 339)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep9" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep9" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(79, -372)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep10" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep10" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-45, -370)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep11" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep11" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(272, -302)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep12" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep12" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-238, -304)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep13" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep13" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(272, 341)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep14" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep14" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(402, -109)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep15" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep15" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-206, -306)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep16" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep16" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(431, 369)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep17" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep17" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(273, 369)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep18" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep18" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-336, -111)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep19" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep19" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(-400, 364)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Sheep20" parent="Level_1/Non_Collectibles" instance=ExtResource("9_gyffv")]
+[node name="Sheep20" parent="Non_Collectibles" instance=ExtResource("9_gyffv")]
 position = Vector2(244, -301)
 collision_layer = 4
 collision_mask = 7
 
-[node name="Waypoints" type="Node2D" parent="Level_1"]
+[node name="Waypoints" type="Node2D" parent="."]
 
-[node name="Marker" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker" type="Marker2D" parent="Waypoints"]
 position = Vector2(-210, 18)
 
-[node name="Marker2" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker2" type="Marker2D" parent="Waypoints"]
 position = Vector2(111, 18)
 
-[node name="Marker3" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker3" type="Marker2D" parent="Waypoints"]
 position = Vector2(-368, 397)
 
-[node name="Marker4" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker4" type="Marker2D" parent="Waypoints"]
 position = Vector2(403, 399)
 
-[node name="Marker5" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker5" type="Marker2D" parent="Waypoints"]
 position = Vector2(242, 14)
 
-[node name="Marker6" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker6" type="Marker2D" parent="Waypoints"]
 position = Vector2(-434, -46)
 
-[node name="Marker7" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker7" type="Marker2D" parent="Waypoints"]
 position = Vector2(-435, -397)
 
-[node name="Marker8" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker8" type="Marker2D" parent="Waypoints"]
 position = Vector2(462, -397)
 
-[node name="Marker9" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker9" type="Marker2D" parent="Waypoints"]
 position = Vector2(465, -13)
 
-[node name="Marker10" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker10" type="Marker2D" parent="Waypoints"]
 position = Vector2(20, -177)
 
-[node name="Marker11" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker11" type="Marker2D" parent="Waypoints"]
 position = Vector2(14, -47)
 
-[node name="Marker12" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker12" type="Marker2D" parent="Waypoints"]
 position = Vector2(-178, -81)
 
-[node name="Marker13" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker13" type="Marker2D" parent="Waypoints"]
 position = Vector2(301, -140)
 
-[node name="Marker14" type="Marker2D" parent="Level_1/Waypoints"]
+[node name="Marker14" type="Marker2D" parent="Waypoints"]
 position = Vector2(14, -335)
 
-[node name="Enemy" type="Node2D" parent="Level_1"]
+[node name="Enemy" type="Node2D" parent="."]
 position = Vector2(13, 16)
 
-[node name="Poliphemus" parent="Level_1/Enemy" instance=ExtResource("10_1pe0h")]
+[node name="Poliphemus" parent="Enemy" instance=ExtResource("10_1pe0h")]
 position = Vector2(2, -2)
 collision_layer = 8
 collision_mask = 7
@@ -1504,11 +1501,11 @@ blind_texture = ExtResource("14_lhbbi")
 speed = 160.0
 waypoints_root = NodePath("../../Waypoints")
 
-[node name="UI_Level1" type="CanvasLayer" parent="Level_1"]
+[node name="UI_Level1" type="CanvasLayer" parent="."]
 
-[node name="Counters" type="Node" parent="Level_1/UI_Level1"]
+[node name="Counters" type="Node" parent="UI_Level1"]
 
-[node name="WineCounter" type="Label" parent="Level_1/UI_Level1/Counters"]
+[node name="WineCounter" type="Label" parent="UI_Level1/Counters"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -1517,11 +1514,8 @@ offset_bottom = 23.0
 grow_horizontal = 0
 text = "Wine: 0"
 
-[node name="SticksCounter" type="Label" parent="Level_1/UI_Level1/Counters"]
-offset_right = 40.0
+[node name="SticksCounter" type="Label" parent="UI_Level1/Counters"]
+offset_left = 1.0
+offset_right = 64.0
 offset_bottom = 23.0
 text = "Sticks: 0"
-
-[node name="UI" parent="." instance=ExtResource("10_00ld1")]
-visible = false
-script = null
