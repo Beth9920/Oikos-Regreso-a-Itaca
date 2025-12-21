@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp25gop61ybc"]
+
+[ext_resource type="Script" uid="uid://d1ywgweh8btvq" path="res://Scripts/lose.gd" id="1_rtc1j"]
+[ext_resource type="Texture2D" uid="uid://dxe7e1rh3f1m3" path="res://Imágenes/fondo-de-pared-liso-naranja.jpg" id="2_pl8j0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_46blr"]
+bg_color = Color(0.4862745, 0.1764706, 0.13725491, 0.84705883)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrsfq"]
+bg_color = Color(0.28627452, 0.15294118, 0.11764706, 0.90588236)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpxic"]
+bg_color = Color(0.6117647, 0.1764706, 0.13725491, 0.8627451)
+
+[node name="Lose" type="Node"]
+script = ExtResource("1_rtc1j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = ExtResource("2_pl8j0")
+expand_mode = 1
+
+[node name="GAME OVER" type="Label" parent="."]
+offset_left = 394.0
+offset_top = 61.0
+offset_right = 756.0
+offset_bottom = 171.0
+theme_override_font_sizes/font_size = 80
+text = "PERDISTE"
+
+[node name="TRY AGAIN" type="Label" parent="."]
+offset_left = 233.0
+offset_top = 172.0
+offset_right = 923.0
+offset_bottom = 241.0
+theme_override_font_sizes/font_size = 50
+text = "¿Quieres volver a intentarlo?"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 381.0
+offset_top = 444.0
+offset_right = 779.0
+offset_bottom = 593.0
+
+[node name="TRY AGAIN" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_46blr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xrsfq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bpxic")
+text = "REINICIAR NIVEL"
+
+[node name="MENU" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_46blr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xrsfq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bpxic")
+text = "MENU"
+
+[connection signal="pressed" from="VBoxContainer/TRY AGAIN" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="VBoxContainer/MENU" to="." method="_on_menu_pressed"]

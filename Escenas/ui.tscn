@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://syujl5r7d0ak"]
+
+[ext_resource type="Script" uid="uid://bvp4b23an32xf" path="res://Scripts/ui.gd" id="1_b3bc3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wusub"]
+bg_color = Color(0.09631475, 0.08182157, 0.069925345, 0.8862745)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.90388817, 0.8916358, 0.8932182, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="Theme" id="Theme_b3bc3"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_b3bc3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -6.0
+offset_right = 14.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wusub")
+
+[node name="Winning_Label" type="Label" parent="MarginContainer/CenterContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -22.0
+offset_right = 108.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_b3bc3")
+theme_type_variation = &"HeaderLarge"
+text = "Level Complete"

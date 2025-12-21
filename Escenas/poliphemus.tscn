@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bowydg27u4pyp"]
+
+[ext_resource type="Texture2D" uid="uid://cttonqlnbmlby" path="res://Imágenes/poli (1).png" id="1_w2opc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v1x1g"]
+radius = 8.0
+
+[node name="Poliphemus" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w2opc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_v1x1g")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

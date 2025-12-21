@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://bolsakvi6j7y4"]
+
+[ext_resource type="PackedScene" uid="uid://w18q6ojqd65j" path="res://Escenas/menu.tscn" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://51tt5mb8evv2" path="res://Escenas/level_1.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bydfdb6888x7f" path="res://Escenas/controls.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://cgfmnkw7syhcm" path="res://Escenas/tutorial_1.tscn" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://syujl5r7d0ak" path="res://Escenas/ui.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://fp4nhiskkpnj" path="res://Escenas/win.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://cp25gop61ybc" path="res://Escenas/lose.tscn" id="7_5vw27"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Menu" parent="." instance=ExtResource("1_h2yge")]
+
+[node name="Controls" parent="." instance=ExtResource("2_lquwl")]
+
+[node name="Tutorial_1" parent="." instance=ExtResource("3_7mycd")]
+
+[node name="Level_1" parent="." instance=ExtResource("2_1bvp3")]
+visible = false
+
+[node name="UI" parent="." instance=ExtResource("3_lquwl")]
+visible = false
+script = null
+
+[node name="Win" parent="." instance=ExtResource("6_272bh")]
+
+[node name="Lose" parent="." instance=ExtResource("7_5vw27")]

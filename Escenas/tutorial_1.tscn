@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgfmnkw7syhcm"]
+
+[ext_resource type="Script" uid="uid://c0s22fcsw1t23" path="res://Scripts/tutorial_1.gd" id="1_lcjps"]
+[ext_resource type="Texture2D" uid="uid://dxe7e1rh3f1m3" path="res://Imágenes/fondo-de-pared-liso-naranja.jpg" id="2_pu633"]
+[ext_resource type="Texture2D" uid="uid://dqerq35yrnbsd" path="res://Imágenes/atenea.png" id="3_x3j4a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtfsv"]
+bg_color = Color(0.4862745, 0.1764706, 0.13725491, 0.84705883)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44a5x"]
+bg_color = Color(0.28627452, 0.15294118, 0.11764706, 0.90588236)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xf30c"]
+bg_color = Color(0.6117647, 0.1764706, 0.13725491, 0.8627451)
+
+[node name="Tutorial_1" type="Node"]
+script = ExtResource("1_lcjps")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1158.0
+offset_bottom = 657.0
+texture = ExtResource("2_pu633")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 93.0
+offset_top = 298.0
+offset_right = 335.0
+offset_bottom = 531.0
+texture = ExtResource("3_x3j4a")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 253.0
+offset_top = 138.0
+offset_right = 970.0
+offset_bottom = 319.0
+theme_override_font_sizes/font_size = 22
+text = "ATENEA: Para poder escapar, deberás cegar a Polifemo, si me entregas toda la madera que encuentres en la cueva te crearé una estaca para lograrlo. 
+Pero poder atacarle, deberás conseguir que se duerma, 5 cálices de vino serán suficientes."
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 462.0
+offset_top = 552.0
+offset_right = 765.0
+offset_bottom = 644.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_gtfsv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_44a5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xf30c")
+text = "CONTINUAR
+"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_continue_pressed"]
