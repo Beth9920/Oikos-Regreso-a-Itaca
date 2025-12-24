@@ -36,7 +36,6 @@ func _update_counters():
 	if sticks_counter:
 		sticks_counter.text = "Sticks: " + str(sticks)
 
-
 func player_wins() -> void:
 	get_tree().change_scene_to_file("res://Escenas/win.tscn")
 	print("LEVEL COMPLETE")
