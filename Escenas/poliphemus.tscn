@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bowydg27u4pyp"]
+[gd_scene load_steps=5 format=3 uid="uid://bowydg27u4pyp"]
 
 [ext_resource type="Texture2D" uid="uid://cttonqlnbmlby" path="res://Imágenes/poli (1).png" id="1_w2opc"]
+[ext_resource type="AudioStream" uid="uid://bk7u0b5ryip7y" path="res://Sonidos y BSO/heavy-walking-footsteps-352771.mp3" id="2_uwchx"]
+[ext_resource type="AudioStream" uid="uid://cwlxwoty7amw7" path="res://Sonidos y BSO/snoring-sound-effect-55854.mp3" id="3_2gthm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v1x1g"]
 radius = 8.0
@@ -15,4 +17,18 @@ shape = SubResource("CapsuleShape2D_v1x1g")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Steps" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_uwchx")
+volume_db = -15.309
+autoplay = true
+max_polyphony = 4
+playback_type = 1
+parameters/looping = true
+
+[node name="Snoring" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2gthm")
+volume_db = -15.309
+max_polyphony = 4
+area_mask = 0
+playback_type = 1
+parameters/looping = true

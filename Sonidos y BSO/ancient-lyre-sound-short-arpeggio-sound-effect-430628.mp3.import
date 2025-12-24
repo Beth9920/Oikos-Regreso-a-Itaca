@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7u0ptbwutxvd"
+path="res://.godot/imported/ancient-lyre-sound-short-arpeggio-sound-effect-430628.mp3-02883f4d938fe96140dd07c5e1d76dbc.mp3str"
+
+[deps]
+
+source_file="res://Sonidos y BSO/ancient-lyre-sound-short-arpeggio-sound-effect-430628.mp3"
+dest_files=["res://.godot/imported/ancient-lyre-sound-short-arpeggio-sound-effect-430628.mp3-02883f4d938fe96140dd07c5e1d76dbc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

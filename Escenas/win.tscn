@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://fp4nhiskkpnj"]
+[gd_scene load_steps=9 format=3 uid="uid://fp4nhiskkpnj"]
 
 [ext_resource type="Script" uid="uid://ycukynpulyj1" path="res://Scripts/win.gd" id="1_hgi8f"]
 [ext_resource type="Texture2D" uid="uid://dxe7e1rh3f1m3" path="res://Imágenes/fondo-de-pared-liso-naranja.jpg" id="2_tmki8"]
 [ext_resource type="Texture2D" uid="uid://bnkucyc8roju5" path="res://Imágenes/blind.png" id="3_tmki8"]
+[ext_resource type="AudioStream" uid="uid://bcyo4nvuk0duy" path="res://Sonidos y BSO/magic-intro-103889.mp3" id="4_w06en"]
+[ext_resource type="AudioStream" uid="uid://dbhk00cpj1xnt" path="res://Sonidos y BSO/button-8-88355.mp3" id="5_20acf"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yblwc"]
 bg_color = Color(0.4862745, 0.1764706, 0.13725491, 0.84705883)
@@ -13,27 +15,43 @@ bg_color = Color(0.28627452, 0.15294118, 0.11764706, 0.90588236)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4x0fk"]
 bg_color = Color(0.6117647, 0.1764706, 0.13725491, 0.8627451)
 
-[node name="Win" type="Node"]
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("1_hgi8f")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1152.0
-offset_bottom = 650.0
+layout_mode = 0
+offset_left = -9.0
+offset_right = 1287.0
+offset_bottom = 719.0
 texture = ExtResource("2_tmki8")
 expand_mode = 2
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 290.0
+offset_right = 687.0
+offset_bottom = 429.0
+texture = ExtResource("3_tmki8")
+
 [node name="Label" type="Label" parent="."]
-offset_left = 404.0
-offset_top = 99.0
-offset_right = 764.0
-offset_bottom = 209.0
+layout_mode = 0
+offset_left = 468.0
+offset_top = 94.0
+offset_right = 828.0
+offset_bottom = 204.0
 theme_override_font_sizes/font_size = 80
 text = "GANASTE"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 434.0
+layout_mode = 0
+offset_left = 492.0
 offset_top = 483.0
-offset_right = 730.0
+offset_right = 794.0
 offset_bottom = 626.0
 
 [node name="NEXT" type="Button" parent="VBoxContainer"]
@@ -52,12 +70,16 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_u4bre")
 theme_override_styles/hover = SubResource("StyleBoxFlat_4x0fk")
 text = "MENU"
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 537.0
-offset_top = 308.0
-offset_right = 627.0
-offset_bottom = 447.0
-texture = ExtResource("3_tmki8")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_w06en")
+volume_db = -43.289
+autoplay = true
+playback_type = 1
+parameters/looping = true
+
+[node name="Sound_button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_20acf")
+volume_db = -30.227
 
 [connection signal="pressed" from="VBoxContainer/NEXT" to="." method="_on_next_pressed"]
 [connection signal="pressed" from="VBoxContainer/MENU" to="." method="_on_menu_pressed"]

@@ -1,4 +1,4 @@
-extends Node
+extends Control
 
 # When pressed goes to next level
 func _on_next_pressed() -> void:

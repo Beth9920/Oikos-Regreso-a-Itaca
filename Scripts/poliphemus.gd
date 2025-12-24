@@ -2,6 +2,8 @@ extends Enemy
 class_name Poliphemus
 
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var steps: AudioStreamPlayer2D = $Steps
+@onready var snoring: AudioStreamPlayer2D = $Snoring
 
 @export var awake_texture: Texture2D
 @export var sleeping_texture: Texture2D
@@ -16,6 +18,7 @@ var blind: bool = false
 func _ready() -> void:
 	super._ready()
 	_update_sprite()
+	_update_sound()
 	body_entered.connect(_on_body_entered)
 	_connect_sheep()
 
@@ -67,6 +70,7 @@ func _on_sheep_bleat(sheep: Node2D) -> void:
 	if sleeping:
 		sleeping = false
 		_update_sprite()
+		_update_sound()
 
 	if agent:
 		current_wp = null
@@ -76,6 +80,7 @@ func _on_sheep_bleat(sheep: Node2D) -> void:
 func _go_to_sleep() -> void:
 	sleeping = true
 	_update_sprite()
+	_update_sound()
 
 # Polifemo se vuelve ciego
 func _go_blind() -> void:
@@ -85,6 +90,7 @@ func _go_blind() -> void:
 		current_wp = null
 		agent.target_position = global_position
 	_update_sprite()
+	_update_sound()
 
 # Actualizar la imagen de Polifemo
 func _update_sprite() -> void:
@@ -94,6 +100,29 @@ func _update_sprite() -> void:
 		sprite.texture = sleeping_texture
 	elif awake_texture:
 		sprite.texture = awake_texture
+
+# Updates sounds
+func _update_sound() -> void:
+	if blind:
+		if steps.playing:
+			steps.stop()
+		if snoring.playing:
+			snoring.stop()
+		return
+	
+	elif sleeping:
+		if steps.playing:
+			steps.stop()
+		if not snoring.playing:
+			snoring.play()
+		return
+	
+	else:
+		if snoring.playing:
+			snoring.stop()
+		if not steps.playing:
+			steps.play()
+	
 
 # Game over
 func _kill_player(_player: Player) -> void:

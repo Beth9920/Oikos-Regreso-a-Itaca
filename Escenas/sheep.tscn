@@ -14,3 +14,5 @@ texture = ExtResource("3_qhocy")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="2"]
 stream = ExtResource("4_y540r")
+volume_db = -15.309
+max_polyphony = 4

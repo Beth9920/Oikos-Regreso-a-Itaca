@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://51tt5mb8evv2"]
+[gd_scene load_steps=34 format=4 uid="uid://51tt5mb8evv2"]
 
 [ext_resource type="Script" uid="uid://ptj2jlkjjhyp" path="res://Scripts/level_1.gd" id="1_gyffv"]
 [ext_resource type="Texture2D" uid="uid://c4gy5ck6q0oku" path="res://Imágenes/stone-wall.jpg" id="2_1pe0h"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://5e0vdvjg3d0r" path="res://Imágenes/imagen_2025-11-23_171115024 (1).png" id="12_ubhxj"]
 [ext_resource type="Texture2D" uid="uid://byqvjm617jb3k" path="res://Imágenes/durm-no-fondo2.png" id="13_65or1"]
 [ext_resource type="Texture2D" uid="uid://bnkucyc8roju5" path="res://Imágenes/blind.png" id="14_lhbbi"]
+[ext_resource type="AudioStream" uid="uid://bp4ghnjhssfvu" path="res://Sonidos y BSO/indian-tribal-percussion-352891.mp3" id="15_dm07i"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lquwl"]
 
@@ -1519,3 +1520,12 @@ offset_left = 1.0
 offset_right = 64.0
 offset_bottom = 23.0
 text = "Sticks: 0"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_dm07i")
+volume_db = -39.594
+autoplay = true
+max_polyphony = 4
+bus = &"New Bus"
+playback_type = 1
+parameters/looping = true

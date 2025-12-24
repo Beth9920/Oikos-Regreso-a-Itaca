@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bp4ghnjhssfvu"
+path="res://.godot/imported/indian-tribal-percussion-352891.mp3-ea39ed61c0fa95f61e9e428405159683.mp3str"
+
+[deps]
+
+source_file="res://Sonidos y BSO/indian-tribal-percussion-352891.mp3"
+dest_files=["res://.godot/imported/indian-tribal-percussion-352891.mp3-ea39ed61c0fa95f61e9e428405159683.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
