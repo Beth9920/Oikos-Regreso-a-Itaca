@@ -10,7 +10,7 @@ class_name Poliphemus
 @export var blind_texture: Texture2D
 
 const WINE_COST_TO_SLEEP := 5
-const BLIND_STICKS_REQUIRED := 378
+const BLIND_STICKS_REQUIRED := 337
 
 var blind: bool = false
 

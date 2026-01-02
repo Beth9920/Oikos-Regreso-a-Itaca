@@ -23,7 +23,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_gpdjo")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = -39.0
 offset_top = 4.0
@@ -32,7 +32,7 @@ offset_bottom = 743.0
 texture = ExtResource("2_ff64o")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="."]
+[node name="ASDW" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 291.0
 offset_top = 258.0
@@ -40,7 +40,7 @@ offset_right = 575.0
 offset_bottom = 450.0
 texture = ExtResource("3_kxvun")
 
-[node name="TextureRect3" type="TextureRect" parent="."]
+[node name="Arrows" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 510.0
 offset_top = 116.0
@@ -49,7 +49,7 @@ offset_bottom = 586.0
 texture = ExtResource("4_kq3yo")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="Text" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5

@@ -24,9 +24,12 @@ func _physics_process(delta: float) -> void:
 	
 	if direction != Vector2.ZERO:
 		velocity = direction * SPEED
+		if not audio.playing:
+			audio.play()
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
-		audio.play()
+		if audio.playing:
+			audio.stop()
 
 	move_and_slide()
