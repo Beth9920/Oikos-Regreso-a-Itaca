@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://51tt5mb8evv2"]
+[gd_scene load_steps=32 format=4 uid="uid://51tt5mb8evv2"]
 
 [ext_resource type="Script" uid="uid://ptj2jlkjjhyp" path="res://Scripts/level_1.gd" id="1_gyffv"]
 [ext_resource type="Texture2D" uid="uid://c4gy5ck6q0oku" path="res://Imágenes/stone-wall.jpg" id="2_1pe0h"]
@@ -7,13 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://dcl8p8ig5xpqt" path="res://Imágenes/stone-wall-shadow.jpg" id="5_ggavl"]
 [ext_resource type="PackedScene" uid="uid://cxad6fqpjr82t" path="res://Escenas/player.tscn" id="6_ubhxj"]
 [ext_resource type="PackedScene" uid="uid://djmvr0hpadugg" path="res://Escenas/wine.tscn" id="7_65or1"]
-[ext_resource type="PackedScene" uid="uid://c4c6p5yd27lba" path="res://Escenas/Stick.tscn" id="8_lhbbi"]
+[ext_resource type="PackedScene" uid="uid://c4c6p5yd27lba" path="res://Escenas/stick.tscn" id="8_lhbbi"]
 [ext_resource type="PackedScene" uid="uid://dm2j0f452foeh" path="res://Escenas/sheep.tscn" id="9_gyffv"]
 [ext_resource type="PackedScene" uid="uid://bowydg27u4pyp" path="res://Escenas/poliphemus.tscn" id="10_1pe0h"]
-[ext_resource type="Script" uid="uid://bbe7qcdg350co" path="res://Scripts/poliphemus.gd" id="11_27bay"]
 [ext_resource type="Texture2D" uid="uid://5e0vdvjg3d0r" path="res://Imágenes/imagen_2025-11-23_171115024 (1).png" id="12_ubhxj"]
-[ext_resource type="Texture2D" uid="uid://byqvjm617jb3k" path="res://Imágenes/durm-no-fondo2.png" id="13_65or1"]
-[ext_resource type="Texture2D" uid="uid://bnkucyc8roju5" path="res://Imágenes/blind.png" id="14_lhbbi"]
 [ext_resource type="AudioStream" uid="uid://bp4ghnjhssfvu" path="res://Sonidos y BSO/indian-tribal-percussion-352891.mp3" id="15_dm07i"]
 [ext_resource type="PackedScene" uid="uid://c7vhyrsaxcfld" path="res://Escenas/pause.tscn" id="15_gxkoe"]
 
@@ -1575,10 +1572,7 @@ position = Vector2(13, 16)
 position = Vector2(2, -2)
 collision_layer = 8
 collision_mask = 7
-script = ExtResource("11_27bay")
 awake_texture = ExtResource("12_ubhxj")
-sleeping_texture = ExtResource("13_65or1")
-blind_texture = ExtResource("14_lhbbi")
 waypoints_root = NodePath("../../Waypoints")
 
 [node name="UI_Level1" type="CanvasLayer" parent="."]

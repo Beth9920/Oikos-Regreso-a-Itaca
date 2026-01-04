@@ -1,6 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://syujl5r7d0ak"]
-
-[ext_resource type="Script" uid="uid://bvp4b23an32xf" path="res://Scripts/ui.gd" id="1_b3bc3"]
+[gd_scene load_steps=3 format=3 uid="uid://syujl5r7d0ak"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wusub"]
 bg_color = Color(0.09631475, 0.08182157, 0.069925345, 0.8862745)
@@ -17,7 +15,6 @@ corner_radius_bottom_left = 8
 [sub_resource type="Theme" id="Theme_b3bc3"]
 
 [node name="UI" type="CanvasLayer"]
-script = ExtResource("1_b3bc3")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cvo3w3disdva8" path="res://Scripts/controls.gd" id="1_gpdjo"]
 [ext_resource type="Texture2D" uid="uid://dedqg2vunl4rj" path="res://Imágenes/image.png" id="2_ff64o"]
-[ext_resource type="Texture2D" uid="uid://de17dqvtixr73" path="res://Imágenes/imagen_2025-11-16_145359914.png" id="3_kxvun"]
+[ext_resource type="Texture2D" uid="uid://c0deki8c35agl" path="res://Imágenes/imagen_2025-11-16_145359914.png" id="3_kxvun"]
 [ext_resource type="Texture2D" uid="uid://cng7pwbwnpous" path="res://Imágenes/key-3860988_640 (1).png" id="4_kq3yo"]
 [ext_resource type="AudioStream" uid="uid://bcyo4nvuk0duy" path="res://Sonidos y BSO/magic-intro-103889.mp3" id="5_hdnor"]
 [ext_resource type="AudioStream" uid="uid://dbhk00cpj1xnt" path="res://Sonidos y BSO/button-8-88355.mp3" id="6_kxydu"]
@@ -34,18 +34,18 @@ expand_mode = 1
 
 [node name="ASDW" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 291.0
-offset_top = 258.0
-offset_right = 575.0
-offset_bottom = 450.0
+offset_left = 92.0
+offset_top = 45.0
+offset_right = 732.0
+offset_bottom = 685.0
 texture = ExtResource("3_kxvun")
 
 [node name="Arrows" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 510.0
-offset_top = 116.0
-offset_right = 1005.0
-offset_bottom = 586.0
+offset_left = 470.0
+offset_top = 53.0
+offset_right = 1096.0
+offset_bottom = 681.0
 texture = ExtResource("4_kq3yo")
 expand_mode = 1
 
@@ -54,10 +54,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 347.0
-offset_top = 120.0
-offset_right = 748.0
-offset_bottom = 174.0
+offset_left = 386.0
+offset_top = 124.0
+offset_right = 787.0
+offset_bottom = 178.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 39
 text = "Para moverte, utiliza:"

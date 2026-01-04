@@ -22,38 +22,39 @@ func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 	_connect_sheep()
 
-
+#Connects to sheep
 func _connect_sheep() -> void:
+	#Gets level node
 	var level := get_parent().get_parent()
 
+	#Gets non_collectibles node
 	var non_collectibles := get_parent().get_parent().get_node("Non_Collectibles")
 	if non_collectibles == null:
 		return
-
+		
+	#Goes through sheep and connects to their signals
 	for sheep in non_collectibles.get_children():
 		if sheep.has_signal("BLEAT"):
 			if not sheep.BLEAT.is_connected(_on_sheep_bleat):
 				sheep.BLEAT.connect(_on_sheep_bleat)
 
-#Cuando Polifemo encuentra a Odiseo
+#When Poliphemous encounters Odysseus
 func _on_body_entered(body: Node) -> void:
+	#Poliphemus only reacts to encounters with player
 	if not (body is Player):
 		return
 
+	#Gets level node
 	var level := get_parent().get_parent()
-	
-	#Si ya ha sido cegado, no reaccionará
-	if blind:
-		return
 
-	# Si está dormido y el jugador tiene todos los palos, se gana la partida
+	# If sleeping and player has all sticks, player wins
 	if sleeping:
 		if level.sticks >= BLIND_STICKS_REQUIRED:
 			_go_blind()
 			level.player_wins()
 		return
 
-	# Si está despierto y el jugador tiene vino suficiente, dormirá. Si no, se pierde la partida.
+	# When awake, if player has wine enough, goes to sleep. If player doesn't have enough wine, game over
 	if level.spend_wine(WINE_COST_TO_SLEEP):
 		_go_to_sleep()
 	elif level.wine >= WINE_COST_TO_SLEEP:
@@ -62,27 +63,26 @@ func _on_body_entered(body: Node) -> void:
 	else:
 		_kill_player(body)
 
-# Si polifemo oye a una de sus ovejas acude a ella
+# If Poliphemus hears one of his sheep, goes to her
 func _on_sheep_bleat(sheep: Node2D) -> void:
-	if blind:
-		return
-
+	#If Poliphemus is sleeping, wakes up
 	if sleeping:
 		sleeping = false
 		_update_sprite()
 		_update_sound()
 
+	#Forgets current destination and goes to sheep
 	if agent:
 		current_wp = null
 		agent.target_position = sheep.global_position
 
-# Polifemo se duerme
+# Polifemo falls asleep
 func _go_to_sleep() -> void:
 	sleeping = true
 	_update_sprite()
 	_update_sound()
 
-# Polifemo se vuelve ciego
+# Polifemo goes blind
 func _go_blind() -> void:
 	blind = true
 	sleeping = false
@@ -92,7 +92,7 @@ func _go_blind() -> void:
 	_update_sprite()
 	_update_sound()
 
-# Actualizar la imagen de Polifemo
+# Updates Poliphemus sprite
 func _update_sprite() -> void:
 	if blind and blind_texture:
 		sprite.texture = blind_texture

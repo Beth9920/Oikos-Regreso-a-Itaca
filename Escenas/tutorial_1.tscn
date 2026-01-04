@@ -47,7 +47,7 @@ offset_right = 1094.0
 offset_bottom = 350.0
 theme_override_font_sizes/font_size = 22
 text = "ATENEA: Para poder escapar, deberás cegar a Polifemo, si me entregas toda la madera que encuentres en la cueva te crearé una estaca para lograrlo. 
-Pero poder atacarle, deberás conseguir que se duerma, 5 cálices de vino serán suficientes."
+Para poder atacarle, deberás conseguir que se duerma, 5 cálices de vino serán suficientes."
 autowrap_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

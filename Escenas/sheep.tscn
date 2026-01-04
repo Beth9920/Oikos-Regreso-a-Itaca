@@ -9,9 +9,8 @@
 script = ExtResource("1_0sl4e")
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="1"]
-light_mask = 4
-position = Vector2(1.0000001, 1.0000002)
-scale = Vector2(0.09825581, 0.09349455)
+position = Vector2(1, 1.9999998)
+scale = Vector2(0.10175992, 0.0970092)
 texture = ExtResource("3_fgvbx")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="2"]

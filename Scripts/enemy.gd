@@ -13,9 +13,6 @@ var sleeping: bool = false
 func _ready() -> void:
 	randomize()
 
-	agent.path_desired_distance = 4.0
-	agent.target_desired_distance = 4.0
-
 	#Checks the node of the waypoints has been selected
 	if waypoints_root == NodePath():
 		return
@@ -35,10 +32,7 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	if sleeping:
-		return
-	
-	if agent == null or waypoints.is_empty():
+	if sleeping or agent == null or waypoints.is_empty():
 		return
 
 	# If destination already reached, pick new one

@@ -32,9 +32,9 @@ func spend_wine(amount: int) -> bool:
 
 func _update_counters():
 	if wine_counter:
-		wine_counter.text = "Wine: " + str(wine)
+		wine_counter.text = "Vino: " + str(wine)
 	if sticks_counter:
-		sticks_counter.text = "Sticks: " + str(sticks)
+		sticks_counter.text = "Palos: " + str(sticks)
 
 func player_wins() -> void:
 	get_tree().change_scene_to_file("res://Escenas/win.tscn")

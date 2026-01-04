@@ -1,24 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://bowydg27u4pyp"]
+[gd_scene load_steps=8 format=3 uid="uid://bowydg27u4pyp"]
 
+[ext_resource type="PackedScene" uid="uid://bggsotptbucoj" path="res://Escenas/enemy.tscn" id="1_6iyjq"]
 [ext_resource type="Texture2D" uid="uid://cttonqlnbmlby" path="res://Imágenes/poli (1).png" id="1_w2opc"]
+[ext_resource type="Script" uid="uid://bbe7qcdg350co" path="res://Scripts/poliphemus.gd" id="2_d6uu2"]
 [ext_resource type="AudioStream" uid="uid://bk7u0b5ryip7y" path="res://Sonidos y BSO/heavy-walking-footsteps-352771.mp3" id="2_uwchx"]
 [ext_resource type="AudioStream" uid="uid://cwlxwoty7amw7" path="res://Sonidos y BSO/snoring-sound-effect-55854.mp3" id="3_2gthm"]
+[ext_resource type="Texture2D" uid="uid://byqvjm617jb3k" path="res://Imágenes/durm-no-fondo2.png" id="4_a6jg6"]
+[ext_resource type="Texture2D" uid="uid://bnkucyc8roju5" path="res://Imágenes/blind.png" id="5_nx1td"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v1x1g"]
-radius = 8.0
+[node name="Poliphemus" instance=ExtResource("1_6iyjq")]
+script = ExtResource("2_d6uu2")
+awake_texture = ExtResource("1_w2opc")
+sleeping_texture = ExtResource("4_a6jg6")
+blind_texture = ExtResource("5_nx1td")
+speed = 205.0
+waypoints_root = NodePath("")
 
-[node name="Poliphemus" type="Area2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = 1
+[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
+z_index = 2
 texture = ExtResource("1_w2opc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_v1x1g")
-
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-
-[node name="Steps" type="AudioStreamPlayer2D" parent="."]
+[node name="Steps" type="AudioStreamPlayer2D" parent="." index="3"]
 stream = ExtResource("2_uwchx")
 volume_db = -15.309
 autoplay = true
@@ -26,10 +28,10 @@ max_polyphony = 4
 playback_type = 1
 parameters/looping = true
 
-[node name="Snoring" type="AudioStreamPlayer2D" parent="."]
+[node name="Snoring" type="AudioStreamPlayer2D" parent="." index="4"]
 stream = ExtResource("3_2gthm")
 volume_db = -15.309
+autoplay = true
 max_polyphony = 4
-area_mask = 0
 playback_type = 1
 parameters/looping = true

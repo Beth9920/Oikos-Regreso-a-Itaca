@@ -13,7 +13,6 @@
 [node name="Level_1" parent="." instance=ExtResource("2_1bvp3")]
 
 [node name="UI" parent="." instance=ExtResource("3_lquwl")]
-script = null
 
 [node name="Menu" parent="UI" instance=ExtResource("1_h2yge")]
 offset_left = -626.0

@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bggsotptbucoj"]
+[gd_scene load_steps=3 format=3 uid="uid://bggsotptbucoj"]
 
 [ext_resource type="Script" uid="uid://tn75nvkmw60e" path="res://Scripts/enemy.gd" id="1_7k104"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1gu25"]
 
 [node name="Enemy" type="Area2D"]
 script = ExtResource("1_7k104")
 waypoints_root = NodePath(".")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1gu25")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
